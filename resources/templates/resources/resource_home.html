@@ -9,7 +9,9 @@
 		Reminders
 	</h1>
 	<ol>
-		<li></li>
+		{% reminder in reminders %}
+		<li>{{ reminder.Subject.subject_name }} ({{ reminder.Subject.subject_code }}) </li>
+		{% endfor %}
 	</ol>
 
 </body>
